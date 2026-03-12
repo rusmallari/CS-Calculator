@@ -1,51 +1,47 @@
 # CS-Calculator
 
 ## Overview
-Credit Score Calculator is a financial analysis application designed to estimate a user's credit score based on common credit factors such as payment history, credit utilization, account age, and credit mix. The application allows users to input financial information and receive an estimated credit score along with insights into how different factors affect their overall credit health.
+FICO Credit Score Calculator is a Python-based financial application designed to estimate a user's credit score using the main FICO metrics: payment history, credit utilization, length of credit history, and recent credit inquiries. Users input their financial information over the past 12 months to receive an estimated credit score and a detailed breakdown of how each factor contributes to their score.
 
-The goal of this project is to demonstrate how credit scoring models work while helping users better understand the behaviors that influence their credit score.
+The goal of this project is to provide a realistic, educational tool that demonstrates how credit scoring works and helps users understand the financial behaviors that influence their credit health.
+
+---
 
 ## Features
 
 ### Credit Score Estimation
-- Calculate an estimated credit score based on user financial inputs
-- Analyze major credit factors such as payment history and credit utilization
-- Provide feedback on how different factors impact the score
+- Calculates an estimated FICO credit score (300–850) based on user inputs.
+- Considers the major credit scoring factors:
+  - Payment History (35%)
+  - Credit Utilization (30%)
+  - Length of Credit History (15%)
+  - Recent Credit Inquiries (20%)
+- Provides an easy-to-read rating: Excellent, Good, Fair, or Poor.
 
 ### User Input System
-Users can enter financial details such as:
-- Payment history status
-- Credit card balances
+Users can input financial details including:
+- Number of on-time payments (past 12 months)
+- Total scheduled payments (past 12 months)
 - Total credit limit
-- Length of credit history
-- Number of credit accounts
+- Total credit used
+- Length of credit history (years)
+- Recent credit inquiries (past 12 months)
 
 ### Score Breakdown
-- Displays estimated credit score range
-- Shows how each credit factor contributes to the overall score
-- Helps users understand areas for improvement
+- Displays the estimated credit score.
+- Shows contribution of each factor to the overall score.
+- Highlights areas that may need improvement.
 
-### Financial Education
-- Provides insights on how to improve credit score
-- Explains common credit scoring factors
-- Encourages responsible financial habits
+---
 
 ## Application Flow
-- **Input Screen:** Users enter credit-related financial information.
-- **Score Calculation:** The system analyzes the inputs and calculates an estimated credit score.
-- **Results Display:** The application shows the calculated score and provides a breakdown of contributing factors.
-- **Improvement Tips:** Users receive recommendations on how to improve their credit profile.
+1. **Input Screen:** Users enter credit-related financial information for the past 12 months.  
+2. **Score Calculation:** The system analyzes inputs and calculates an estimated FICO score.  
+3. **Results Display:** The application presents the score along with a breakdown of contributing factors.  
+4. **Improvement Tips:** Users receive guidance on improving their credit profile.  
+
+---
 
 ## Technologies Used
-
-### Front-End
-- HTML
-- CSS
-- JavaScript
-
-### Back-End
-- Python / Node.js (depending on implementation)
-
-### Tools
-- Git
-- GitHub
+- Python 3.x  
+- Tkinter for GUI development  
